@@ -15,8 +15,6 @@ function sum(a, b) { //eslint-disable-line
   return requiredArray;
 }
 
-sum(4, 7);
-
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -37,8 +35,6 @@ function multiply(a, b) { //eslint-disable-line
   var secondArray = [prod, statementTwo];
   return secondArray;
 }
-
-multiply(5, 9);
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -71,8 +67,6 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var thirdArray = [adderTwo[0], prodTwo[0], statementThree, statementFour];
   return thirdArray;
 }
-
-sumAndMultiply(4, 7, 5);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -122,12 +116,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+var testArray = [2, 3, 4];
 
+function multiplyArray(multArr) { //eslint-disable-line
+  var prodA = multiply(multArr[0], multArr[1]);
+  // console.log('prodA = ', prodA);
+  var prodB = multiply(prodA[0], multArr[2]);
+  // console.log('prodB = ', prodB);
+  var product = prodB[0];
+  // console.log(product);
+  var stringMsg = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${product}.`;
+  var fifthArray = [product, stringMsg];
+  return fifthArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
