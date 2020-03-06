@@ -2,6 +2,7 @@
 
 Welcome to Code 201! This is a class that builds on your foundational knowledge of HTML, CSS, JavaScript, git, and general web development, to prepare you for the deep dive of any Code 301 class.
 
+
 ## Introduction
 
 The general course schedule is:
